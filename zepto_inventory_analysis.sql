@@ -1,6 +1,6 @@
--- ==================================================
+-- ===========================================================
 -- PROJECT TITLE : ZEPTO PRODUCT, INVENTORY & PRICING ANALYSIS
--- ==================================================
+-- ===========================================================
 
 -- PROJECT TYPE  : Advanced SQL Portfolio Project
 
@@ -204,7 +204,7 @@ OR availablequantity < 0
 OR quantity < 0
 OR mrp < discountedsellingprice;
 
--- Cherry Blossom Liquid Shoe Polish Neutral	0.00	0.00	1	75
+
 
 -- ============================
 -- 6. EXPLORATORY DATA ANALYSIS
@@ -593,7 +593,7 @@ GROUP BY category
 ORDER BY total_estimated_revenue DESC
 LIMIT 10;
 
--- -- Ice Cream & Desserts and Chocolates & Candies generate the highest estimated revenue.
+-- Duplicate products
 
 SELECT
     category,
@@ -685,6 +685,14 @@ HAVING SUM(availablequantity) <
 
 -- 5. Categories with consistently high discounts should be analyzed
 -- to maintain profit margins.
-    
-    
-    
+
+-- ===========
+-- CONCLUSIONS
+-- ===========
+
+-- This project helped strengthen practical SQL skills by 
+-- working on a retail inventory dataset and solving business-oriented analytical problems.
+
+-- The analysis focused not only on writing SQL queries, 
+-- but also on understanding inventory behavior, pricing strategy, product performance,
+-- and operational risks from a business perspective.
